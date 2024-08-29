@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: false  # Eureka Server itself does not register with Eureka
+    fetch-registry: false        # Eureka Server does not fetch the registry from another Eureka server
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: localhost
+
+spring.application.name: demo-server
+server.port: 8761
